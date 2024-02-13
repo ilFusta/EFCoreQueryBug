@@ -15,6 +15,8 @@ namespace EFCoreQueryBug
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+            //Uncomment and add your connection string to use SQL Server intead of InMemoryDatabase
+            //optionsBuilder.UseSqlServer("YourQueryStringHere")
             optionsBuilder.UseInMemoryDatabase("QueryBug")
                 .EnableSensitiveDataLogging()
                 .LogTo(Console.WriteLine);
