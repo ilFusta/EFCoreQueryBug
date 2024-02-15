@@ -12,5 +12,5 @@ I'm not using TPH but just filtering on type manually.
 
 The query is trying to get all the Statements of Type "Client" grouped by ContactID and then, for each of them, all the Statements of Type "Model" that are commission and are linked to the same Transaction.
 
-With the preloaded data, the expected result for the ContactID = 1, should be 2 Model Statements, instead it returns 4.
+With the preloaded data, the expected result for the ContactID = 1, should be 2 Model Statements, instead it returns 4 duplicating the rows.
 
